@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Learning javaScript With Abdul kader</title>
+	<script src="my.js"></script>
+</head>
+<body>
+
+<h2> Some Collect Information javaScript</h2>
+	
+	
+	
+<!-- Here comment --><!-- 
+Rulse : obossoi <script> Tager mage Rakte Hoy</script>;
+
+
+=> external file call: Alada file create krar pore <script src="my.js"></script> diye call korte hoy;
+=> alert : eta anar jonno alert('Alert');  likhe alart banano hoy;
+
+
+
+=> Out put:
+Using : innrerHTML
+Using : document.write();
+Using : alert();
+Using : console.log();
+
+
+
+
+
+=> document.write:
+        	document.write('I love Bangladesh');
+			document.write('<h2> I love Bangladesh </h2>');
+			document.write(5*6);
+			<button onclick="document.write('This is Our Heading')">Click me</button>
+			
+=> console.log:
+	varable er man ber korar jonno use kra hoy Name a camelcase use kra best;
+	<script type="text/javascript"> 
+	console.log('This is our console.log');
+	</script>
+	
+	
+-----Name calling System----
+	
+	<script type="text/javascript"> 
+	var x = 10;
+	console.log(x);
+	</script>
+	
+	
+------Again nameCalling----------
+
+<script type="text/javascript"> 
+	var x = 10;
+	var b = 25;
+	var bx = b+x;
+	console.log(bx);
+	</script>
+	
+	
+------string varrible------	
+
+	<script type="text/javascript"> 
+	var x = 'Abdul'
+	var y = 'Kader'
+	var age = 22;
+	console.log(x, y, "is",age,"Years old");
+	</script>
+	
+	
+=> Test project:
+	Get Element eta Id k chananor jonno use kra hoy. Src diye change kre;
+	<button onclick="document.getElementById('demo').src='img/pic_bulbon.gif'">Turn ON</button>
+	<img id="demo" src="img/pic_bulboff.gif" alt="test" />
+	<button onclick="document.getElementById('demo').src='img/pic_bulboff.gif'">Turn OFF</button>	
+	
+
+
+=> Operatior:
+	++ Baranor jnno usee kra hoy;
+	-- Comanor jnno usee kra hoy;
+	>= condition or tartheke beshi krar jnno usee kra hoy;
+	<= condition or tartheke kom krar jnno usee kra hoy;
+	%  vognanso ber kra hoy;
+
+=> Data type:
+	 'Abdul' string type data;
+	  10 Number type data;
+	 'Null' blank type data;
+	 'Bolean' if a use kra hoy;
+	 'Undefined' Jeta diklar kra hoy ni;
+
+
+=> Condiotional or If er babohar :
+----- 1 Condiotion -------
+	var x =10;
+	var y =20;
+	if( x < y ){
+	console.log('Condiotion is right');
+	}
+
+------------2nd---------
+
+	var carPrice = 5000;
+	if( carPrice >=5000){
+	console.log('Yes You can');
+	}
+
+------------3nd Else---------
+
+	var carPrice = 4000;
+	if( carPrice >=5000){
+	console.log('Yes You can');
+	}else{
+	console.log('Sorry');
+	};
+
+
+------------4th Else Cuppon code---------
+
+	var carPrice = 4000;
+	var cuppon = 1;
+	if( carPrice >=5000){
+	console.log('Yes You can');
+	}else if(cuppon = 1){
+	console.log('Yes u can because you hav a cuppon code');
+	}
+
+
+------------5th Else Cuppon code---------
+	var carPrice = 4000;
+	var cuppon = 1;
+	if( carPrice >=5000){
+	console.log('Yes You can');
+	}else if(cuppon = 1){
+	console.log('Yes u can because you hav a cuppon code');
+	}else{
+	console.log('Sorry');
+	}
+
+
+=> For Loop :
+ var  x = 100;
+ for(x; x<=1000; x++){
+ console.log(x);
+ }
+
+
+=> Jor sonkha ber Kra:
+ var  x = 100;
+ for(x; x<=1000; x++){
+ if( x%2 == 0){
+ console.log(x);
+  }
+ }
+
+
+
+=> Bigor Sonkha:
+ var  x = 100;
+ for(x; x<=1000; x++){
+ if( x%2 == 1){
+console.log(x);
+}
+ }
+
+
+
+=> While loop:none;
+
+
+
+
+
+=>Array using:
+		<h2 id="array"> </h2>
+		<script type="text/javascript"> 
+		var x = ["Bg","En","Am","Us","In","Ca",]
+		document.getElementById('array').innerHTML = x;
+		</script>
+
+		
+----------1m-------------------------
+
+<h2 id="array"> </h2>
+<script type="text/javascript"> 
+var x = ["Bg","En","Am","Us","In","Ca",]
+document.getElementById('array').innerHTML = x[5];
+</script>
+	
+
+----------Undefined-------------------------
+
+	<h2 id="array"> </h2>
+	<script type="text/javascript"> 
+	var x = ["Bg","En","Am","Us","In","Ca",]
+	x[6] = "Bk"
+	document.getElementById('array').innerHTML = x[6];
+	</script>
+ 
+=> Ternaly operatior:
+	<script type="text/javascript">
+	var x = 28;
+	x >= 28? console.log('Yes'):console.log('No');
+	</script>
+	
+-------------2nd-----------------
+	<script type="text/javascript">
+	var x = 28;
+	x >= 27? console.log('Yes'):console.log('No');
+	</script>
+
+=> Function : function er vitore niye Just functioner name call krte hoy
+	<script type="text/javascript">
+		function x(){
+		var x = ["Bg","En","Am","Us","In","Ca",]
+		document.getElementById('array').innerHTML = x;
+		}
+	 x();
+	</script>
+	
+
+=> Globar R local varable : function:
+
+Global : function er globar baire thaka;
+Global : function baire and vitore man dey!
+
+Local : function er globar Vitore thaka
+Local k Global a convert :Just VAR khotha tule Dilei hoy;
+
+	 -->
+	<!-- End comment -->
+</body>
+</html>
